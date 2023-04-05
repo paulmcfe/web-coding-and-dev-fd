@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Setting a text field value</title>
+        
+        <style>
+            * {
+                margin: 0;
+                box-sizing: border-box;
+            }
+            
+            body {
+                max-width: 50rem;
+                margin: 1rem;
+            }
+            
+            label {
+                display: block;
+                margin: 1rem 0 1.5rem 0;
+            }
+            
+            div {
+                margin-top: 1rem;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+        <label>
+        Type a URL with mixed uppercase and lowercase <br>
+        characters, then press Enter/Return:<br>
+        <input id="homepage-field" type="url" name="homepage" value="HTTP://etc" size="30">
+        </label>
+        
+        
+    </body>
+        <script>
+            $(document).ready(function() {
+                $('form').submit(function(e) {
+                    var homepageURL = $('#homepage-field').val();
+                    $('#homepage-field').val(homepageURL.toLowerCase());
+             
+                   // Prevent the form from submitting
+                    e.preventDefault();
+                });
+            });
+        </script>
+</html>

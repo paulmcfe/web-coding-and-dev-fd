@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adding a class</title>
+        
+        <style>
+            div {
+                height: 25vh;
+                width: 25vw;
+                margin: 1rem;
+            }
+            
+            .my-class {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 6px dotted black;
+                font-family: Verdana, serif;
+                font-size: 2rem;
+                background-color: lightgray;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="my-div">
+        Hello World!
+        </div>
+        
+        
+    </body>
+        <script>
+            $(document).ready(function() {
+                $('#my-div').addClass('my-class');
+            });
+        </script>
+</html>

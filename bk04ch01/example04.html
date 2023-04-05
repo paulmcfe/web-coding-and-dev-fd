@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Removing an element</title>
+        
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <h3>Section 1</h3>
+        <h3>Section 2</h3>
+        <h3 class="temp">Section A</h3>
+        <h3 class="temp">Section B</h3>
+        <h3>Section 3</h3>
+        
+        
+    </body>
+        <script>
+            $(document).ready(function() {
+                // Remove those h3 elements that have class "temp"
+                $('h3').remove('.temp');
+            });
+        </script>
+</html>

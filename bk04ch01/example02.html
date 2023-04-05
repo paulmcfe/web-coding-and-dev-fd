@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Replacing an element's HTML</title>
+        
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        
+    </body>
+        <script>
+            $(document).ready(function() {
+                $('body').append('<header></header>');
+                $('header').append('<h2>This is the header.</h2>');
+            
+                // Replace the header content
+                $('header').html('<h1>No, <em>this</em> is the header!</h1>');
+            });
+        </script>
+</html>

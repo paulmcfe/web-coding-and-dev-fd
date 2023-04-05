@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adding elements to the end of an array: push()</title>
+        
+        <style>
+            div {
+                font-family: "Courier New", monospace;
+                font-size: 1.5rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="output">
+        </div>
+    </body>
+        <script>
+            var myArray = new Array("First", "Second", "Third");
+            var pushArray = new Array("Fourth", "Fifth", "Sixth");
+            for (var i = 0; i < pushArray.length; i++) {
+                myArray.push(pushArray[i]);
+            }
+            document.getElementById('output').innerHTML = myArray;
+        </script>
+</html>

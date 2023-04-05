@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adding an element</title>
+        
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        
+    </body>
+        <script>
+            $(document).ready(function() {
+                var domArray = ['<header></header>', '<nav></nav>', '<main></main>', '<footer></footer>'];
+                $('body').prepend(domArray);
+                $('header').append('<h1>This is the header.</h1>');
+                $('nav').append('Nav links will go here.');
+                $('main').append('<h2>This is the main part of the page.</h2>');
+                $('footer').append('This is the footer.');
+            });
+        </script>
+</html>

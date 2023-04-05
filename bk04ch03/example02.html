@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Creating a navigation menu</title>
+        
+        <style>
+            .ui-menu {
+                width: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <ul id="my-menu">
+            <li>
+                <div>Menu Item #1</div>
+            </li>
+            <li>
+                <div>Menu Item #2</div>
+                <ul>
+                    <li>
+                        <div>Submenu Item #2-A</div>
+                    </li>
+                    <li>
+                        <div>Submenu Item #2-B</div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div>-</div>
+            </li>
+            <li>
+                <div>Menu Item #3</div>
+            </li>
+        </ul>
+    </body>
+        <script>
+            $('#my-menu').menu();
+        </script>
+</html>

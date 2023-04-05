@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Displaying a message in a dialog</title>
+        
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            
+            button {
+                padding: .5rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="my-dialog" title="Hello Dialog World!">
+             Welcome to my dialog widget!
+        </div>
+        
+        <button id="my-button">
+            Display the dialog
+        </button>
+    </body>
+        <script>
+            // Initialize the dialog widget
+            $('#my-dialog').dialog({autoOpen: false});
+            
+            // Display the dialog when the button is clicked
+            $('#my-button').click(function() {
+                $('#my-dialog').dialog('open');
+            });
+        </script>
+</html>

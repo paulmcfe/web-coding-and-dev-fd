@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Converting getday() into a day name (array method)</title>
+        
+        <style>
+            div {
+                font-family: "Courier New", monospace;
+                font-size: 1.25rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="output">
+        </div>
+    </body>
+        <script>
+            var dayNames = ["Sunday","Monday","Tuesday",
+            "Wednesday","Thursday","Friday","Saturday"];
+            
+            var dateNow = new Date();
+            var dayNow = dateNow.getDay();
+            document.getElementById("output").innerHTML = "getDay() is " + dayNow + "; the name is " + dayNames[dayNow];
+        </script>
+</html>

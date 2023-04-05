@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hiding and showing content with an accordion</title>
+        
+        <style>
+            .ui-accordion {
+                width: 400px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="my-accordion">
+            <h6>Header A</h6>
+            <div>This is the content panel for Header A</div>
+            <h6>Header B</h6>
+            <div>This is the content panel for Header B</div>
+            <h6>Header C</h6>
+            <div>This is the content panel for Header C</div>
+        </div>
+    </body>
+        <script>
+            $('#my-accordion').accordion({
+                collapsible: true
+            });
+        </script>
+</html>

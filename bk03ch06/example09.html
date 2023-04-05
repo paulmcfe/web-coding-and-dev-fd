@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adding an element to the page</title>
+        
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <main>
+        </main>
+    </body>
+        <script>
+            newArticle = document.createElement("article");
+            document.querySelector("main").appendChild(newArticle);
+            newArticle.innerHTML = "Hello <code>document</code> Object World!";
+        </script>
+</html>

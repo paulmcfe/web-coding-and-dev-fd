@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Using .get() or .post() to communicate with the server</title>
+        
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            body {
+                width: 40rem;
+                margin: 1rem;
+            }
+            
+            div {
+                color: green;
+                font-size: 1.25rem;
+            }
+            
+            .warning {
+                color: red;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Inventory Report</h1>
+        <div>
+        </div>
+        
+        
+    </body>
+        <script>
+            $(document).ready(function() {
+                $.post('php/total-inventory.php', 'category=1', function(data) {
+                    var msg = 'The total inventory is $' + data;
+                    if (data >= 10000) {
+                        msg = 'WARNING! Total inventory is $' + data;
+                        $('div').addClass('warning');
+                    }
+                    $('div').html(msg);
+                });
+            });
+        </script>
+</html>

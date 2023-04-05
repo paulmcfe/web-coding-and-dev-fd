@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Using for() Loops (decrement example)</title>
+        
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        
+    </body>
+        <script>
+            var ordinal, color;
+            for (var rank = 3; rank >= 1; rank--) {
+                switch (rank) {
+                    case 1:
+                        ordinal = "first";
+                        break;
+                    case 2:
+                        ordinal = "second";
+                        break;
+                    case 3:
+                        ordinal = "third";
+                }
+                color = prompt("What is your " + ordinal + "-favorite CSS color?", "");
+                console.log(rank + ". " + color);
+            }
+        </script>
+</html>

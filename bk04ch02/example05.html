@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Getting data about the event</title>
+        
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            body {
+                margin: 2rem;
+            }
+            
+            div {
+                margin: 1rem 0;
+                font-size: 1.25rem;
+            }
+            
+            #key-output {
+                width: 100px;
+                padding: .5rem;
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            Type a key:
+        </div>
+        <input id="key-input" type="text">
+        <div>
+            Here's the code of the key you pressed:
+        </div>
+        <div id="key-output"> 
+        </div>
+        
+        
+    </body>
+        <script>
+            $(document).ready(function() {
+                $('#key-input').focus();
+            });
+            
+            $('#key-input').keypress(function(e) {
+                $('#key-output').text(e.which);
+            });
+        </script>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Working with local scope</title>
+        
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        
+    </body>
+        <script>
+            function A() {
+                var myMessage;
+                myMessage = "I'm in the scope!";
+                console.log("Function A: " + myMessage);
+            }
+            
+            function B() {;
+                console.log("Function B: " + myMessage);
+            }
+            
+            A();
+            B();
+        </script>
+</html>

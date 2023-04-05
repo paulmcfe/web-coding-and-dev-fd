@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Loading output from a PHP script</title>
+        
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <h2 id="target">
+        </h2>
+        
+        
+    </body>
+        <script>
+            $(document).ready(function() {
+                $('#target').load('get-server-time.php');
+            });
+        </script>
+</html>
