@@ -4,7 +4,7 @@ Repository for the example files for the first edition of Web Coding &amp; Devel
 
 Click the directories to access individual example files. To download all the example files, follow these steps:
 
-1. From the main repository page, click the gree Code button.
-1. Click Download ZIP.
+1. From the [main repository page](https://github.com/paulmcfe/web-coding-and-dev-fd), click the green **Code** button.
+1. Click **Download ZIP**.
 1. On your device, locate the downloaded `.zip` file.
 1. Double-click the `.zip` file to extract the folders and files.
