@@ -1,8 +1,9 @@
 # Web Coding & Development All-in-One For Dummies, First Edition
+![The front cover of the book Web Coding and Development All-in-One For Dummies](https://paulmcfedries.com/images/WebCodingDevAIOFD.jpg)
 ## Example Files
 Repository for the example files for the first edition of Web Coding &amp; Development All-in-One For Dummies
 
-Click the directories to access individual example files. To download all the example files, follow these steps:
+Click the directories (for example, `bk01ch01`) to access individual example files. To download all the example files, follow these steps:
 
 1. From the [main repository page](https://github.com/paulmcfe/web-coding-and-dev-fd), click the green **Code** button.
 1. Click **Download ZIP**.
