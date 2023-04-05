@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jquery-3.3.1.min.js"></script>
         <title>Setting maximum and minimum values on a numeric field</title>
         
         <style>
@@ -33,16 +34,16 @@
     </head>
     <body>
         <form>
-            <div>
-                <label for="loan-term">Loan term (years):</label>
-                <input id="loan-term" 
-                       type="number" 
-                       placeholder="3-25"
-                       min="3"
-                       max="25">
-                <button type="submit">Submit</button>
-            </div>
-        </form>
+                <div>
+                    <label for="loan-term">Loan term (years):</label>
+                    <input id="loan-term" 
+                           type="number" 
+                           placeholder="3-25"
+                           min="3"
+                           max="25">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
     </body>
         <script>
             

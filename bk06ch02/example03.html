@@ -3,8 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jquery-3.3.1.min.js"></script>
         <title>Getting a text field value</title>
-        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <style>
             * {
                 margin: 0;
@@ -28,16 +29,16 @@
     </head>
     <body>
         <form>
-            <label>
-            Type something and press Enter/Return:
-            <input id="search-field" type="search" name="q" placeholder="Enter search text" size="30">
-            </label>
-        </form>
-        
-        <div id="output">
-        </div>
-        
-        
+                <label>
+                Type something and press Enter/Return:
+                <input id="search-field" type="search" name="q" placeholder="Enter search text" size="30">
+                </label>
+            </form>
+            
+            <div id="output">
+            </div>
+            
+            
     </body>
         <script>
             $(document).ready(function() {

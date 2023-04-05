@@ -3,8 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jquery-3.3.1.min.js"></script>
         <title>The explode effect</title>
-        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
         <style>
             * {
                 margin: 0;
@@ -55,22 +58,22 @@
     </head>
     <body>
         <header>
-            <img src="/images/notw.png" alt="News of the Word logo">
-            <h1>News of the Word</h1>
-            <h3>Language news you won’t find anywhere else (for good reason!)</h3>
-        </header>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">What’s New</a>
-            <a href="#">What’s Old</a>
-            <a href="#">What’s What</a>
-        </nav>
-        
-        <main>
-            <button id="explode-img">
-                Hide the logo with the explode effect
-            </button>
-        </main>
+                <img src="/images/notw.png" alt="News of the Word logo">
+                <h1>News of the Word</h1>
+                <h3>Language news you won’t find anywhere else (for good reason!)</h3>
+            </header>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">What’s New</a>
+                <a href="#">What’s Old</a>
+                <a href="#">What’s What</a>
+            </nav>
+            
+            <main>
+                <button id="explode-img">
+                    Hide the logo with the explode effect
+                </button>
+            </main>
     </body>
         <script>
             $('#explode-img').click(function() {

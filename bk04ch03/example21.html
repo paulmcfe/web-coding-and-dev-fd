@@ -3,8 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jquery-3.3.1.min.js"></script>
         <title>The resizable interaction</title>
-        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
         <style>
             * {
                 margin: 0;
@@ -26,12 +29,12 @@
     </head>
     <body>
         <p>
-        Resize the image by dragging the right edge, bottom edge, or bottom-right corner
-        </p>
-        <img src="/images/image27-thumbnail.jpg">
-        <p>
-        <span id="resize-div"></span>
-        </p>
+            Resize the image by dragging the right edge, bottom edge, or bottom-right corner
+            </p>
+            <img src="/images/image27-thumbnail.jpg">
+            <p>
+            <span id="resize-div"></span>
+            </p>
     </body>
         <script>
             $('img').resizable(
