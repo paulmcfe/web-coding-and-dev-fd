@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jquery-3.3.1.min.js"></script>
+        <title>Replacing an element's HTML</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <header>
+                Header
+            </header>
+            <nav>
+                Navigation
+            </nav>
+            <main>
+                <article>
+                    Article
+                </article>
+                <aside>
+                    Aside
+                </aside>
+            </main>
+            <footer>
+                Footer
+            </footer>
+    </body>
+        <script>
+            $(document).ready(function() {
+                $('body').append('<header></header>');
+                $('header').append('<h2>This is the header.</h2>');
+            
+                // Replace the header content
+                $('header').html('<h1>No, <em>this</em> is the header!</h1>');
+            });
+        </script>
+</html>

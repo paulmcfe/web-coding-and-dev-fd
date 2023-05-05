@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jquery-3.3.1.min.js"></script>
+        <title>Converting getmonth() into a month name (array method)</title>
+        
+        <style>
+            div {
+                font-family: "Courier New", monospace;
+                font-size: 1.25rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="output">
+            </div>
+    </body>
+        <script>
+            var monthNames = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+            var dateNow = new Date();
+            var monthNow = dateNow.getMonth();
+            document.getElementById("output").innerHTML = "getMonth() is " + monthNow + "; the name is " + monthNames[monthNow];
+        </script>
+</html>

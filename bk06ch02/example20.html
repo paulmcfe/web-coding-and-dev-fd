@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jquery-3.3.1.min.js"></script>
+        <title>Listening for element changes</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            * {
+                margin: 0;
+                box-sizing: border-box;
+            }
+            
+            body {
+                max-width: 25rem;
+                margin: 1rem;
+                background-color: #ffffff;
+            }
+            
+            div {
+                margin: .5rem 0 0 1rem;
+            }
+            
+            label {
+                display: block;
+                margin: 1.5rem 0 .5rem 0;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+                <div>
+                    <label for="bgcolor">Select a background color</label>
+                    <input id="bgcolor" type="color" name="bg-color" value="#ffffff">
+                </div>
+            </form>
+            
+            
+    </body>
+        <script>
+            $(document).ready(function() {
+                $('#bgcolor').change(function() {
+                    var bgColor = $(this).val();
+                    $('body').css('background-color', bgColor);
+                });
+            });
+        </script>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jquery-3.3.1.min.js"></script>
+        <title>Removing an array's last element: pop()</title>
+        
+        <style>
+            div {
+                font-family: "Courier New", monospace;
+                font-size: 1.5rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="output1">
+            </div>
+            <div id="output2">
+            </div>
+    </body>
+        <script>
+            var myArray = new Array("First", "Second", "Third");
+            var myString = myArray.pop();
+            document.getElementById('output1').innerHTML = myString;
+            document.getElementById('output2').innerHTML = 'myArray now contains ' + myArray.length + ' element(s).';
+        </script>
+</html>

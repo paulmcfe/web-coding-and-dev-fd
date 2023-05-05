@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jquery-3.3.1.min.js"></script>
+        <title>Populating an Array with Data</title>
+        
+        <style>
+            div {
+                font-family: "Courier New", monospace;
+                font-size: 1.5rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="output">
+            </div>
+    </body>
+        <script>
+            // Declare the array
+            var dogPhotos = new Array(5);
+            
+            // Initialize the array values
+            dogPhotos[0] = "dog-1";
+            dogPhotos[1] = "dog-2";
+            dogPhotos[2] = "dog-3";
+            dogPhotos[3] = "dog-4";
+            dogPhotos[4] = "dog-5";
+            
+            // Display an example
+            document.getElementById('output').innerHTML = '/images/' + dogPhotos[0] + '.png';
+        </script>
+</html>

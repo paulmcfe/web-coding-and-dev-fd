@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jquery-3.3.1.min.js"></script>
+        <title>Passing multiple values to a function</title>
+        
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <h1>Passing multiple values to a function</h1>
+            <button onclick="changeColors('red', 'white')">
+                Red Background, White Text
+            </button>
+            <button onclick="changeColors('white', 'red')">
+                White Background, Red Text
+            </button>
+    </body>
+        <script>
+            function changeColors(newBackColor, newForeColor) {
+                document.body.style.backgroundColor = newBackColor;
+                document.body.style.color = newForeColor;
+            }
+        </script>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jquery-3.3.1.min.js"></script>
+        <title>Exiting a loop using the break statement</title>
+        
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        
+    </body>
+        <script>
+            var sum = 0;
+            var num;
+            for (var counter = 1; counter <= 3; counter++) {
+                num = prompt("Type a positive number:", 1);
+                if (num < 0) {
+                    sum = 0;
+                    break;
+                }
+                sum += Number(num);
+            }
+            if (sum > 0) {
+                console.log("The average of your numbers is " + sum / 3);
+            }
+        </script>
+</html>
